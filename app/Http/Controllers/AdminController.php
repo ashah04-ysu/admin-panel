@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\DB;
 use League\Csv\Reader;
 use League\Csv\Statement;
 use League\Csv\Writer;
-require '../../vendor/autoload.php';
+require './../vendor/autoload.php';
+
 class AdminController extends Controller
 {
     public function index()
