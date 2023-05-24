@@ -19,14 +19,12 @@ This repository contains the source code and documentation for the Admin Panel.
 ## Installation
 1. Clone the repository: `git clone https://github.com/ashah04-ysu/admin-panel.git`
 2. Navigate to the project directory: `cd admin-panel`
-3. Ensure you have Composer installed.
-4. Run the following command to install the project dependencies:
-5. Make sure you have MySQL server running on port 3306 and Redis server running.
-6. Set the password for the MySQL server to `root` and the username to `root`.
-7. Create a database named `laravel` in your MySQL server.
-8. Run the following command to migrate the necessary database tables:
-9. After migrating the tables, start the Laravel development server by running the following command:
-10. Open your browser and visit `localhost` or `127.0.0.1:8000/admin` to access the admin panel.
+3. Ensure you have Laravel, Composer installed along with the required libraries such as `league/csv`.
+4. Make sure you have MySQL server running on port 3306.
+5. Create a database named `laravel` in your MySQL server.
+6. Migrate the necessary database tables:
+7. After migrating the tables, start the Laravel development server.
+8. Open your browser and visit `localhost` or `127.0.0.1:8000/admin` to access the admin panel.
 
 ### Screenshots
 ![Admin Panel Screenshot 1](screenshots/screenshot1.png)
@@ -41,8 +39,6 @@ The following API endpoints are available for interacting with the data table:
 4. `PUT /update`: Accepts a JSON payload in the request body and updates an existing record matched with the SKU.
 5. `DELETE /delete`: Deletes a record by SKU.
 
-## Contributing
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request. Ensure that you follow the project's coding conventions and style.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
