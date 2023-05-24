@@ -49,4 +49,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Feel free to contact me if you have any questions or feedback.
 
 ## Acknowledgements
-[Optional: Acknowledge any external resources or libraries used in the project]
+This project was completed as a coding test provided by Trumbull Industries.
