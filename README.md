@@ -11,6 +11,23 @@ This repository contains the source code and documentation for the Admin Panel.
 ## Features
 - [List the key features of the admin panel]
 
+## Guidelines
+1. Ensure to install Laravel, which is a PHP framework required for this project.
+
+2. To run the project, make sure you have Composer installed.
+
+3. Ensure that MySQL server is running on port 3306 and Redis server is also running.
+
+4. The password for the MySQL server should be set to `root`, and the username should be `root`.
+
+5. Create a database named `laravel` in your MySQL server.
+
+6. Run the following command to migrate the necessary database tables:
+
+7. After migrating the tables, start the Laravel development server by running the following command:
+
+8. Open your browser and visit `localhost` or `127.0.0.1:8000/admin` to access the admin panel.
+
 ## Installation
 1. Clone the repository: `git clone https://github.com/ashah04-ysu/admin-panel.git`
 2. Navigate to the project directory: `cd admin-panel`
@@ -42,4 +59,3 @@ Feel free to contact us if you have any questions or feedback.
 
 ## Acknowledgements
 [Optional: Acknowledge any external resources or libraries used in the project]
-
