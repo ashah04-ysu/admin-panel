@@ -22,9 +22,10 @@ This repository contains the source code and documentation for the Admin Panel.
 3. Ensure you have Laravel, Composer installed along with the required libraries such as `league/csv`.
 4. Make sure you have MySQL server running on port 3306.
 5. Create a database named `laravel` in your MySQL server.
-6. Migrate the necessary database tables:
-7. After migrating the tables, start the Laravel development server.
+6. Migrate the necessary database tables `php artisan migrate`.
+7. After migrating the tables, start the Laravel development server `php artisan serve`.
 8. Open your browser and visit `localhost` or `127.0.0.1:8000/admin` to access the admin panel.
+9. Open your browser and visit `localhost` or `127.0.0.1:8000/api` to access the API.
 
 ### Screenshots
 ![Admin Panel Screenshot 1](screenshots/screenshot1.png)
