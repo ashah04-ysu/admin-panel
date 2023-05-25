@@ -11,7 +11,7 @@ class ApiController extends Controller
     {
         $products = Product::all();
 
-        return response()->json($products);
+        return response()->json($products, 201);
     }
 
     public function getByDate(Request $request)
@@ -24,7 +24,7 @@ class ApiController extends Controller
 
         $products = Product::whereDate('created_at', $date)->get();
 
-        return response()->json($products);
+        return response()->json($products, 201);
     }
 
     public function add(Request $request)
@@ -53,6 +53,16 @@ class ApiController extends Controller
     {
         $request->validate([
             'SKU' => 'required',
+            'TSI' => 'required',
+            'VENDOR' => 'required',
+            'BRAND' => 'required',
+            'SHIPPING_TEMPLATE' => 'required',
+            'TEMPLATE_CODE' => 'required',
+            'INSTOCK_LEADTIME' => 'required',
+            'NOSTOCK_LEADTIME' => 'required',
+            'QUANTITY' => 'required',
+            'OBSOLETE' => 'required',
+            'IS_UPDATED' => 'required',
             // ... add validation rules for other fields
         ]);
 
@@ -64,7 +74,7 @@ class ApiController extends Controller
 
         $product->update($request->all());
 
-        return response()->json($product);
+        return response()->json($product, 201);
     }
 
     public function delete(Request $request)
@@ -81,6 +91,6 @@ class ApiController extends Controller
 
         $product->delete();
 
-        return response()->json(['message' => 'Product deleted']);
+        return response()->json(['message' => 'Product deleted'], 200);
     }
 }

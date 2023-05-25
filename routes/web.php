@@ -27,3 +27,4 @@ Route::put('/admin/{id}', [AdminController::class, 'update'])->name('admin.updat
 Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
 Route::post('/admin/upload', [AdminController::class, 'upload'])->name('admin.upload');
 Route::get('/admin/export', [AdminController::class, 'export'])->name('admin.export');
+Route::get('/api', [AdminController::class, 'api_simulator'])->name('admin.api_simulator');

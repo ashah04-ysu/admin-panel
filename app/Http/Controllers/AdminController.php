@@ -131,5 +131,11 @@ class AdminController extends Controller
         // Logic to render the create form
         return view('admin.create');
     }
+
+    public function api_simulator()
+    {
+        // Logic to render the create form
+        return view('admin.api_simulator');
+    }
 }
 
